@@ -123,7 +123,7 @@ creations will tickle your culinary senses!</p>
                 <div class="col-xs-12 col-sm-2">
                    <p style="padding:40px;"></p>
                    <!-- data-toggle="modal"  data-target="#reserveform" -->
-                   <a type="button" class="btn btn-warning btn-block">
+                   <a type="button" class="btn btn-warning btn-block" id="reserve-btn">
                       Reserve Table
                    </a>
                </div>
@@ -434,8 +434,11 @@ creations will tickle your culinary senses!</p>
           //  login modal
            $("#login-btn").click(function(){
            $("#loginModal").modal();
-          //  reserve login
-    });
+         });
+         //  reserve login
+         $("#reserve-btn").click(function(){
+           $("#reserveform").modal();
+         });
        });
     </script>
 </body>
