@@ -65,7 +65,7 @@
                  </ul>
                  <ul class="nav navbar-nav navbar-right">
                    <!-- data-toggle="modal" data-target="#loginModal" -->
-                    <li><a>
+                    <li><a id="login-btn">
                     <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
@@ -431,6 +431,11 @@ creations will tickle your culinary senses!</p>
                        $("#carousel-play").click(function(){
                $("#mycarousel").carousel('cycle');
            });
+          //  login modal
+           $("#login-btn").click(function(){
+           $("#loginModal").modal();
+          //  reserve login
+    });
        });
     </script>
 </body>
